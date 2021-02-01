@@ -1,615 +1,711 @@
-
-@media screen and (max-width: 1080px) {
-  main {
-    padding-top: 60px;
-  }
-}
-@media screen and (max-width: 767px) {
-  main {
-    padding-top: 52px;
-  }
-  html {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .pc-dn {
-    display: block !important;
-  }
-  .sp-dn {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* style */
-  .hover-opacity {
-    transition: opacity 0.2s;
-  }
-  .hover-opacity:hover {
-    opacity: 0.7;
-  }
-  .hover-scale {
-    transition: transform 0.2s;
-  }
-  a:hover .hover-scale {
-    transform: scale(1.1);
-  }
-  .service-media:hover .hover-scale {
-    transform: scale(1.05);
-  }
-  .hover-text-color {
-    transition: 0.2s;
-  }
-  a:hover .hover-text-color, .hover-text-color:hover {
-    color: #f79314;
-  }
-  a.link-button {
-    color: #fff;
-  }
-}
-/*header*/
-
-@media screen and (max-width: 1080px) {
-  .site-header {
-    background-color: #fff;
-    z-index: 10;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .site-header {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  
-  .header-nav .header-nav-list {
-　　position: fixed;
-    top: 52px;
-    left: 100%;
-    width: 100%;
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 75px;
-    transition: transform 0.5s;
-    z-index: 99;
-}
-
-.header-nav .header-nav-item {
-    padding: 20px 0;
-}
-}
-
-@media screen and (max-width: 767px) {
-  .header-logo > .header-logo-pc {
-    display: none;
-  }
-  .header-logo > .header-logo-sp {
-    display: inline-block;
-    width: auto;
-    height: 16px;
-  }
-}
- /*header-line*/
-@media screen and (max-width: 1080px) {
-  
-  /*三本線*/
-.nav-btn{
-  cursor: pointer;
-   position: fixed;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    height: 60px;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    background-color: #ffffff
-     transition: all 0.5s;
-}
-
-.nav-btn span,
-.nav-btn span:before,
-.nav-btn span:after{
-  content: '';
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: #222;
-    position: absolute;
-}
-
- .nav-btn span:before {
-    bottom: 8px;
-}
-
-.nav-btn span:after{
-  top: 8px;
-}
-#nav-btn-check:checked ~.nav-btn span{
- background-color: rgba(255, 255, 255, 0);
-}
-
-
-#nav-btn-check:checked ~ .nav-btn span:after {
-    top: 8px;
-}
-
-
-#nav-btn-check:checked ~ .nav-btn span:before{
-   bottom: 0;
-    transform: rotate(45deg);
-}
-
-#nav-btn-check:checked ~.nav-btn span:after{
-   top: 0;
-    transform: rotate(-45deg);
-}
-#nav-btn{
-    display: left;
-}
-
-}
-/*ここまで*/
-@media screen and (max-width: 767px){
-.section-underlayer-hero.course {
-    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-sp.png);
-}
-
-.section-underlayer-hero {
-    background-size: 100%;
-    padding-top: 42px;
-    padding-bottom: 90px;
-    background-size: contain;
-}
-
-.content-width {
-    max-width: none;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.underlayer-hero-heading.course {
-    padding-left: 0px;
-}
-
-.underlayer-hero-heading {
-    padding: 0;
-    font-size: 22px;
-    text-align: center;
-    line-height: 1.3;
-}
-
-.main-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.section-main-heading {
-    text-align: center;
-    font-size: 26px !important;
-    line-height: 1.2;
-}
-.sp-br {
-    display: block;
-}
-
-}
-
-@media screen and (max-width: 767px){
-.section-header h2 > span {
-    letter-spacing: 1px;
-    font-size: 30px;
-}
-}
-
-@media screen and (max-width: 767px){
-.main-section .section-header + .section-content {
-    margin-top: 50px;
-}
-
-.detail-text {
-    font-size: 15px;
-    text-align: left;
-}
-
-.pc-br {
-    display: inline;
-}
-
-.detail-text--emphasis {
-    font-size: 16px;
-    text-align: center;
-}
-
-.under-decoration>br {
-    display: block;
-}
-
-}
-
-@media screen and (max-width: 767px){
-.detail-point {
-    margin-top: 80px;
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.detail-point .list-no {
-    width: 80px;
-    height: 80px;
-    margin-top: -70px;
-}
-
-.list-no-image {
-    width: 32px;
-}
-
-.detail-point-title {
-    font-size: 20px;
-}
-
-.detail-box {
-    flex-direction: column;
-}
-
-.detail-cassette {
-    width: 100%;
-    margin-top: 36px;
-}
-
-.detail-cassette-title {
-    font-size: 15px;
-}
-
-.detail-cassette-text::before {
-    vertical-align: sub;
-}
-
-}
-
-
-@media screen and (max-width: 767px){
-.detail-course-block-box {
-    overflow-x: auto;
-    padding: initial;
-    display: block;
-}
-
-.detail-course-block:first-child {
-    margin-right: initial !important;
-    margin-bottom: 60px;
-}
-
-.detail-course-block {
-    min-width: initial !important;
-    width: initial !important;
-}
-}
-
-@media screen and (max-width: 767px){
-.main-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.content-width {
-    max-width: none;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.section-main-heading {
-    text-align: center;
-    font-size: 26px !important;
-    line-height: 1.2;
-}
-
-.main-section .section-header + .section-content {
-    margin-top: 50px;
-}
-
-.plan-box {
-    margin-top: 40px;
-    padding: 20px;
-}
-
-.plan-head {
-    font-size: 24px;
-    line-height: 27px;
-}
-
-.plan-head br {
-    display: block;
-}
-
-.plan-cassettes {
-    margin-top: 20px;
-}
-
-.plan-cassettes {
-    position: relative;
-}
-
-.plan-cassettes-head {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.list-content {
-    padding-left: 0;
-}
-
-.list-content, .desc-text, .flow-image-box figcaption {
-    font-size: 15px;
-    line-height: 22px;
-}
-
-.list-content + .list-content {
-    margin-top: 10px;
-}
-
-.desc-title {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 22px;
-    padding-left: 22px;
-}
-
-.desc-text {
-    padding-left: 0;
-    text-align: center;
-}
-
-.desc-text p + p {
-    margin-top: 10px;
-}
-
-.desc-text {
-    padding-left: 0;
-    text-align: center;
-}
-
-.desc-title {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 22px;
-    padding-left: 22px;
-}
-
-.desc-text.central {
-    text-align: center;
-}
-
-.list-content, .desc-text, .flow-image-box figcaption {
-    font-size: 15px;
-    line-height: 22px;
-}
-}
-
-@media screen and (max-width: 767px){
-.plan-cassettes-tools {
-    display: block;
-    margin-top: 17px;
-}
-
-.plan-cassettes-tool {
-    float: initial !important;
-    width: initial !important;
-}
-
-.plan-cassettes-tool:nth-child(odd) {
-    margin-right: initial !important;
-}
-
-.plan-cassettes-tool-box {
-    padding: 13px 8px 30px;
-}
-
-.plan-cassettes-tool {
-    float: initial !important;
-    width: initial !important;
-}
-
-.plan-cassettes-skipping {
-    display: block;
-    padding: 18px;
-}
-
-.plan-cassettes {
-    position: relative;
-}
-
-.plan-cassettes-skipping-left {
-    float: initial;
-    width: 65%;
-    height: initial;
-    max-width: 130px;
-    margin: 0px auto 20px;
-}
-
-.plan-cassettes-skipping-right {
-    float: initial;
-    text-align: center;
-}
-
-.plan-cassettes-skipping-right>h4 {
-    margin-bottom: 14px;
-}
-
-.plan-cassettes-skipping-right>h4>br {
-    display: block;
-}
-
-.plan-cassettes-skipping-right>p {
-    text-align: left;
-}
-
-.plan-cassettes {
-    margin-top: 20px;
-}
-
-.plan-cassettes {
-    position: relative;
-}
-
-.plan-cassettes-head {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.main-section.pick-up-contents {
-    padding-top: 55px;
-    padding-bottom: 60px;
-}
-
-.main-section.pick-up-contents::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 70%;
-    display: block;
-    width: 281px;
-    height: 275px;
-    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 40px;
-    left: 60%;
-    width: 130px;
-    height: 130px;
-}
-
-.pick-up-contents > .content-width {
-    background: none;
-    padding-top: 0;
-}
-
-}
-
-@media screen and (max-width: 767px){
-.main-section .section-header + .section-content {
-    margin-top: 50px;
-}
-
-.section-content.contents {
-    position: relative;
-}
-.main-section.pick-up-contents {
-    padding-top: 55px;
-    padding-bottom: 60px;
-  }
-  .pick-up-contents-list {
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .pick-up-contents-list > .pick-up-contents-cassette {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-  }
-  .pick-up-contents-list > .pick-up-contents-cassette + .pick-up-contents-cassette {
-    margin-top: 20px;
-    padding-top: 30px;
-  }
-  .pick-up-contents-background {
-    height: 62%;
-    width: 100%;
+@media screen and (max-width: 1080px) {	
+	main {
+	padding-top: 60px;
+	}
+	}
+	@media screen and (max-width: 767px) {
+	main {
+	padding-top: 52px;
+	}
+	html {
+	font-size: 15px;
+	}
+	}
+	
+	@media screen and (max-width: 767px) {
+	.pc-dn {
+	display: block !important;
+	}
+	.sp-dn {
+	display: none !important;
+	}
+	}
+	
+	@media screen and (min-width: 767px) {
+	/* style */
+	.hover-opacity {
+	transition: opacity 0.2s;
+	}
+	.hover-opacity:hover {
+	opacity: 0.7;
+	}
+	.hover-scale {
+	transition: transform 0.2s;
+	}
+	a:hover .hover-scale {
+	transform: scale(1.1);
+	}
+	.service-media:hover .hover-scale {
+	transform: scale(1.05);
+	}
+	.hover-text-color {
+	transition: 0.2s;
+	}
+	a:hover .hover-text-color, .hover-text-color:hover {
+	color: #f79314;
+	}
+	a.link-button {
+	color: #fff;
+	}
+	}
+	/*header*/
+	
+	@media screen and (max-width: 1080px) {
+	.site-header {
+	background-color: #fff;
+	z-index: 10;
+	width: 100%;
+	}
+	}
+	@media screen and (max-width: 767px) {
+	.site-header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	}
+	
+	.header-nav .header-nav-list {
+	position: fixed;
+	top: 52px;
+	left: 100%;
+	width: 100%;
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 75px;
+	transition: transform 0.5s;
+	z-index: 99;
+	}
+	
+	.header-nav .header-nav-item {
+	padding: 20px 0;
+	}
+	}
+	
+	@media screen and (max-width: 767px) {
+	.header-logo > .header-logo-pc {
+	display: none;
+	}
+	.header-logo > .header-logo-sp {
+	display: inline-block;
+	width: auto;
+	height: 16px;
+	}
+	}
+	/*header-line*/
+	@media screen and (max-width: 1080px) {
+	
+	/*三本線*/
+	.nav-btn{
+	cursor: pointer;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	height: 60px;
+	width: 60px;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	background-color: rgba(0,0,255,0)
+	}
+	
+	.nav-btn span,
+	.nav-btn span:before,
+	.nav-btn span:after{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 25px;
+	border-radius: 3px;
+	background-color: #222;
+	position: absolute;
+	}
+	
+	.nav-btn span:before {
+	bottom: 8px;
+	}
+	
+	.nav-btn span:after{
+	top: 8px;
+	}
+	#nav-btn-check:checked ~.nav-btn span{
+	background-color: #ffffff;
+	}
+	
+	
+	#nav-btn-check:checked ~ .nav-btn span:after {
+	top: 8px;
+	}
+	
+	
+	#nav-btn-check:checked ~ .nav-btn span:before{
+	bottom: 0;
+	transform: rotate(45deg);
+	}
+	
+	#nav-btn-check:checked ~.nav-btn span:after{
+	top: 0;
+	transform: rotate(-45deg);
+	}
+	#nav-btn{
+	display: left;
+	}
+	
+	.header-nav-list{
+		overflow-y: scroll;
+	  width: 100%;
+    height: 100%;
+    position: fixed;
     top: 0;
-    left: 20px;
-    position: absolute;
-  }
-  .pick-up-contents-background.slick-slider {
-    position: absolute;
-  }
-  .section-content.contents {
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+	}
+	
+   .header-nav-item-outline{
+   	color: #ffffff;
+   }
+   
+	.header-nav-item hover-opacity{
+	  display: block;
+    width: 100%;
+    font-size: 15px;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
     position: relative;
-  }
-  .pick-up-contents-dots.slick-slider {
+    margin-left: 30px;
+	}
+	
+     .header-nav .header-nav-item > span:first-child{
+     	font-size: 16px;
+    letter-spacing: 5px;
+    color: #fff;
+     }
+     
+     .header-nav .header-nav-item > span:last-child{
+     	font-size: 12px;
+    margin-top: 10px;
+    color: #f79314;
+    letter-spacing: 2px;
+     }
+     
+     .header-button {
+    margin: 0 auto;
+    width: 250px;
+      }
+      
+      .link-button.menu {
+    height: 60px;
+    font-size: 16px;
+      }
+	
+	.header-nav-item hover-opacity::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
     position: absolute;
-  }
-  .section-content.contents {
-    position: relative;
-  }
-  .contents-background {
-    position: absolute;
-  }
-  .plan-cassettes {
-    position: relative;
-  }
-  .slick-arrow {
-    top: 50%;
-  }
-  .main-section.top-works .section-content {
-    position: relative;
-  }
- .main-section.pick-up-contents::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 70%;
-    display: block;
-    width: 281px;
-    height: 275px;
-    background-image: url(../images/bg-section-top-course.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 40px;
-    left: 60%;
-    width: 130px;
-    height: 130px;
-  }
-  .pick-up-contents {
-    padding-top: 60px;
-  }
-  .pick-up-contents > .content-width {
-    background: none;
-    padding-top: 0;
-  }
+    right: 11px;
+    top: 16px;
+   }
+   
+   .header-nav-item-outline {
+    color: #ffffff;
+}
+   
+   .header-nav-list{
+   	overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 100;
+    transition: all 0.5s;/*アニメーション設定*/
 }
 
-@media screen and (max-width: 767px){
-  .site-footer {
-    padding-top: 60px;
-    padding-bottom: 40px;
+#nav-btn-check:checked ~ .header-nav-list {
+    left: 0;/*メニューを画面内へ*/
+}
+
+ .header-button {
+    margin: 0 auto;
+    width: 250px;
   }
-  .site-footer-main {
-    display: block;
-    text-align: center;
+  .header-nav-list > li + li:last-child {
+    margin-left: 0;
   }
-  .site-footer-main .footer-nav {
-    text-align: left;
-    margin-left: 20px;
+	
+	}
+	
+	@media screen and (max-width: 767px) {
+  .header-nav .header-nav-list {
+    top: 52px;
   }
-  .site-footer-main * + .footer-character {
-    margin-top: 50px;
-  }
-  .site-footer-main * + .footer-info {
-    margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid #fff;
-  }
-  .site-footer-sub {
-    text-align: center;
-  }
-  
-  .footer-info .footer-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .footer-info .footer-company, .footer-info .footer-address {
-    text-align: center;
-  }
-  .footer-info .footer-social {
-    justify-content: center;
+  .header-nav .header-nav-list.is-scroll {
+    top: 52px;
+    bottom: 0;
   }
 }
+	/*ここまで*/
+	@media screen and (max-width: 767px){
+	.section-underlayer-hero.course {
+	background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-sp.png);
+	}
+	
+	.section-underlayer-hero {
+	background-size: 100%;
+	padding-top: 42px;
+	padding-bottom: 90px;
+	background-size: contain;
+	}
+	
+	.content-width {
+	max-width: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+	
+	.underlayer-hero-heading.course {
+	padding-left: 0px;
+	}
+	
+	.underlayer-hero-heading {
+	padding: 0;
+	font-size: 22px;
+	text-align: center;
+	line-height: 1.3;
+	}
+	
+	.main-section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	}
+	
+	.section-main-heading {
+	text-align: center;
+	font-size: 26px !important;
+	line-height: 1.2;
+	}
+	.sp-br {
+	display: block;
+	}
+	
+	}
+	
+	@media screen and (max-width: 767px){
+	.section-header h2 > span {
+	letter-spacing: 1px;
+	font-size: 30px;
+	}
+	}
+	
+	@media screen and (max-width: 767px){
+	.main-section .section-header + .section-content {
+	margin-top: 50px;
+	}
+	
+	.detail-text {
+	font-size: 15px;
+	text-align: left;
+	}
+	
+	.pc-br {
+	display: inline;
+	}
+	
+	.detail-text--emphasis {
+	font-size: 16px;
+	text-align: center;
+	}
+	
+	.under-decoration>br {
+	display: block;
+	}
+	
+	}
+	
+	@media screen and (max-width: 767px){
+	.detail-point {
+	margin-top: 80px;
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+	}
+	
+	.detail-point .list-no {
+	width: 80px;
+	height: 80px;
+	margin-top: -70px;
+	}
+	
+	.list-no-image {
+	width: 32px;
+	}
+	
+	.detail-point-title {
+	font-size: 20px;
+	}
+	
+	.detail-box {
+	flex-direction: column;
+	}
+	
+	.detail-cassette {
+	width: 100%;
+	margin-top: 36px;
+	}
+	
+	.detail-cassette-title {
+	font-size: 15px;
+	}
+	
+	.detail-cassette-text::before {
+	vertical-align: sub;
+	}
+	
+	}
+	
+	
+	@media screen and (max-width: 767px){
+	.detail-course-block-box {
+	overflow-x: auto;
+	padding: initial;
+	display: block;
+	}
+	
+	.detail-course-block:first-child {
+	margin-right: initial !important;
+	margin-bottom: 60px;
+	}
+	
+	.detail-course-block {
+	min-width: initial !important;
+	width: initial !important;
+	}
+	}
+	
+	@media screen and (max-width: 767px){
+	.main-section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	}
+	
+	.content-width {
+	max-width: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+	
+	.section-main-heading {
+	text-align: center;
+	font-size: 26px !important;
+	line-height: 1.2;
+	}
+	
+	.main-section .section-header + .section-content {
+	margin-top: 50px;
+	}
+	
+	.plan-box {
+	margin-top: 40px;
+	padding: 20px;
+	}
+	
+	.plan-head {
+	font-size: 24px;
+	line-height: 27px;
+	}
+	
+	.plan-head br {
+	display: block;
+	}
+	
+	.plan-cassettes {
+	margin-top: 20px;
+	}
+	
+	.plan-cassettes {
+	position: relative;
+	}
+	
+	.plan-cassettes-head {
+	margin-bottom: 10px;
+	text-align: center;
+	}
+	
+	.list-content {
+	padding-left: 0;
+	}
+	
+	.list-content, .desc-text, .flow-image-box figcaption {
+	font-size: 15px;
+	line-height: 22px;
+	}
+	
+	.list-content + .list-content {
+	margin-top: 10px;
+	}
+	
+	.desc-title {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 22px;
+	padding-left: 22px;
+	}
+	
+	.desc-text {
+	padding-left: 0;
+	text-align: center;
+	}
+	
+	.desc-text p + p {
+	margin-top: 10px;
+	}
+	
+	.desc-text {
+	padding-left: 0;
+	text-align: center;
+	}
+	
+	.desc-title {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 22px;
+	padding-left: 22px;
+	}
+	
+	.desc-text.central {
+	text-align: center;
+	}
+	
+	.list-content, .desc-text, .flow-image-box figcaption {
+	font-size: 15px;
+	line-height: 22px;
+	}
+	}
+	
+	@media screen and (max-width: 767px){
+	.plan-cassettes-tools {
+	display: block;
+	margin-top: 17px;
+	}
+	
+	.plan-cassettes-tool {
+	float: initial !important;
+	width: initial !important;
+	}
+	
+	.plan-cassettes-tool:nth-child(odd) {
+	margin-right: initial !important;
+	}
+	
+	.plan-cassettes-tool-box {
+	padding: 13px 8px 30px;
+	}
+	
+	.plan-cassettes-tool {
+	float: initial !important;
+	width: initial !important;
+	}
+	
+	.plan-cassettes-skipping {
+	display: block;
+	padding: 18px;
+	}
+	
+	.plan-cassettes {
+	position: relative;
+	}
+	
+	.plan-cassettes-skipping-left {
+	float: initial;
+	width: 65%;
+	height: initial;
+	max-width: 130px;
+	margin: 0px auto 20px;
+	}
+	
+	.plan-cassettes-skipping-right {
+	float: initial;
+	text-align: center;
+	}
+	
+	.plan-cassettes-skipping-right>h4 {
+	margin-bottom: 14px;
+	}
+	
+	.plan-cassettes-skipping-right>h4>br {
+	display: block;
+	}
+	
+	.plan-cassettes-skipping-right>p {
+	text-align: left;
+	}
+	
+	.plan-cassettes {
+	margin-top: 20px;
+	}
+	
+	.plan-cassettes {
+	position: relative;
+	}
+	
+	.plan-cassettes-head {
+	margin-bottom: 10px;
+	text-align: center;
+	}
+	
+	.main-section.pick-up-contents {
+	padding-top: 55px;
+	padding-bottom: 60px;
+	}
+	
+	.main-section.pick-up-contents::before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 70%;
+	display: block;
+	width: 281px;
+	height: 275px;
+	background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 40px;
+	left: 60%;
+	width: 130px;
+	height: 130px;
+	}
+	
+	.pick-up-contents > .content-width {
+	background: none;
+	padding-top: 0;
+	}
+	
+	}
+	
+	@media screen and (max-width: 767px){
+	.main-section .section-header + .section-content {
+	margin-top: 50px;
+	}
+	
+	.section-content.contents {
+	position: relative;
+	}
+	.main-section.pick-up-contents {
+	padding-top: 55px;
+	padding-bottom: 60px;
+	}
+	.pick-up-contents-list {
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+	.pick-up-contents-list > .pick-up-contents-cassette {
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+	}
+	.pick-up-contents-list > .pick-up-contents-cassette + .pick-up-contents-cassette {
+	margin-top: 20px;
+	padding-top: 30px;
+	}
+	.pick-up-contents-background {
+	height: 62%;
+	width: 100%;
+	top: 0;
+	left: 20px;
+	position: absolute;
+	}
+	.pick-up-contents-background.slick-slider {
+	position: absolute;
+	}
+	.section-content.contents {
+	position: relative;
+	}
+	.pick-up-contents-dots.slick-slider {
+	position: absolute;
+	}
+	.section-content.contents {
+	position: relative;
+	}
+	.contents-background {
+	position: absolute;
+	}
+	.plan-cassettes {
+	position: relative;
+	}
+	.slick-arrow {
+	top: 50%;
+	}
+	.main-section.top-works .section-content {
+	position: relative;
+	}
+	.main-section.pick-up-contents::before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 70%;
+	display: block;
+	width: 281px;
+	height: 275px;
+	background-image: url(../images/bg-section-top-course.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 40px;
+	left: 60%;
+	width: 130px;
+	height: 130px;
+	}
+	.pick-up-contents {
+	padding-top: 60px;
+	}
+	.pick-up-contents > .content-width {
+	background: none;
+	padding-top: 0;
+	}
+	}
+	
+	@media screen and (max-width: 767px){
+	.site-footer {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	}
+	.site-footer-main {
+	display: block;
+	text-align: center;
+	}
+	.site-footer-main .footer-nav {
+	text-align: left;
+	margin-left: 20px;
+	}
+	.site-footer-main * + .footer-character {
+	margin-top: 50px;
+	}
+	.site-footer-main * + .footer-info {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #fff;
+	}
+	.site-footer-sub {
+	text-align: center;
+	}
+	
+	.footer-info .footer-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.footer-info .footer-company, .footer-info .footer-address {
+	text-align: center;
+	}
+	.footer-info .footer-social {
+	justify-content: center;
+	}
+	}
